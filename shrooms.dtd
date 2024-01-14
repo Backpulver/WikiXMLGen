@@ -1,0 +1,15 @@
+<!ELEMENT mushroom (etymology, identification, classification, morphology, growth, nutrition, humanUse)>
+<!ELEMENT etymology (#PCDATA)>
+<!ELEMENT identification (#PCDATA)>
+<!ELEMENT classification (#PCDATA)>
+<!ELEMENT morphology (microscopicFeatures)>
+<!ELEMENT microscopicFeatures (#PCDATA)>
+<!ELEMENT growth (#PCDATA)>
+<!ELEMENT nutrition (vitaminD)>
+<!ELEMENT vitaminD (#PCDATA)>
+<!ELEMENT humanUse (edibleMushrooms, toxicMushrooms, psychoactiveMushrooms, folkMedicine, otherUses)>
+<!ELEMENT edibleMushrooms (#PCDATA)>
+<!ELEMENT toxicMushrooms (#PCDATA)>
+<!ELEMENT psychoactiveMushrooms (#PCDATA)>
+<!ELEMENT folkMedicine (#PCDATA)>
+<!ELEMENT otherUses (#PCDATA)>
