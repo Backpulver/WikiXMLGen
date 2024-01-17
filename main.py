@@ -2,6 +2,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
+import subprocess
 
 def normalize_title(title):
     return ''.join(e for e in title.lower() if e.isalnum())
@@ -92,7 +93,8 @@ def main():
     tree = ET.ElementTree(xml_tree)
     tree.write(f"{root_element_name}.xml", encoding='utf-8', xml_declaration=True)
     print(f"XML file generated successfully: {root_element_name}.xml")
-
+    
+    subprocess.run(["notepad.exe", f"{root_element_name}.xml"])
 
 if __name__ == "__main__":
     main()
